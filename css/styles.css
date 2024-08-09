@@ -1,0 +1,128 @@
+/* Start Variables */
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+/* End Variables */
+/* Start Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    background-color: var(--Light-Gray);
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Rules */
+/* Start the box */
+.box {
+    width: 650px;
+    height: auto;
+    background-color: white;
+    margin: 200px auto;
+    /* padding: 20px; */
+}
+/* End the box */
+/* Start head */
+    header {
+        padding: 40px;
+    }
+    header h2 {
+        color: var(--Cyan);
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    header p {
+        font-weight: bold;
+        color: var(--Bright-Yellow);
+        margin-bottom: 15px;
+    }
+    header span {
+        color: var(--Grayish-Blue);
+    }
+/* End head */
+/* Start main part */
+    .box main {
+        display: flex;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+    }
+    .box main section:first-child {
+        background-color: var(--Cyan);
+        padding: 40px;
+    }
+    .box main section:first-child h3 {
+        color: white;
+        padding-bottom: 10px;
+    }
+    .box main section:first-child p {
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+    .box main section:first-child p span{
+        margin-left: 5px;
+        font-size: 20px;
+        color: var(--Light-Gray);
+        font-weight: 100;
+        display: inline;
+    }
+    .box main section:first-child span {
+        display: block;
+        padding-bottom: 30px;
+        color: white;
+        font-weight: 100;
+    }
+    .box main section:first-child button {
+        background-color: var(--Bright-Yellow);
+        border: none;
+        padding: 10px;
+        width: 250px;
+        height: 50px;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s
+    }
+    .box main section:first-child button:hover {
+        background-color: hsl(71, 86%, 44%);
+    }
+    .box main section:last-child {
+        background-color: hsl(179, 52%, 43%);
+        padding: 40px;
+        width: 100%;
+    }
+    .box main section:last-child h4 {
+        color: white;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .box main section:last-child p {
+        color: var(--Light-Gray);
+    }
+/* End main part */
